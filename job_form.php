@@ -58,6 +58,14 @@
             background-color: #0056b3;
         }
 
+       /* New CSS to move the "Job Lists" button to the left */
+.center-button-container {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 325px; /* Corrected the margin syntax */
+}
+
+
     </style>
 </head>
 <body>
@@ -112,7 +120,17 @@
             <input type="file" id="job_advertisement" name="job_advertisement" accept="image/*">
 
             <button type="submit">Submit Job</button>
+            
+
         </form>
+         <!-- Centered "Job Lists" Button with Arrow Mark -->
+<div class="center-button-container">
+   <button onclick="window.location.href='edit_delete_job.php';">
+      Job Lists  &#8594; <!-- Arrow mark -->
+   </button>
+</div>
+
+
     </div>
 
     <script>
